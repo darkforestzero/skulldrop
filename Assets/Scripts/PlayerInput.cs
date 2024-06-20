@@ -6,11 +6,10 @@ using UnityEngine.SceneManagement;
 public class PlayerInput : MonoBehaviour
 {
     public float distancefromcenter = 0.1f;
-
+    public GameObject ball;
     private void SpawnBall(Vector3 position)
     {
         // create prefab 'ball' and set its position to x=0,y=5,z=1
-        GameObject ball = Resources.Load<GameObject>("ball");
         Instantiate(ball, new Vector3(position.x, 5, 1), Quaternion.identity);
     }
 

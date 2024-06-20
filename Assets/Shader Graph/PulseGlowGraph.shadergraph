@@ -13,12 +13,6 @@
             "m_Id": "af44da8f45fb4e578d4a5d4491989ce9"
         },
         {
-            "m_Id": "b7aa7f23738f46108d1916d90cbd3844"
-        },
-        {
-            "m_Id": "8ef9115baec0448e9f74cc7092afd78a"
-        },
-        {
             "m_Id": "6291dd11e09b4edf8003cbd7e5d162d4"
         },
         {
@@ -74,9 +68,6 @@
         },
         {
             "m_Id": "a17fb7a5cec148c0bb6c08e44045b6d2"
-        },
-        {
-            "m_Id": "ee5ca056d1714fafb1d5bf02caa9f9ea"
         },
         {
             "m_Id": "648592d369834810968ffab530b8236c"
@@ -1504,12 +1495,6 @@
             "m_Id": "af44da8f45fb4e578d4a5d4491989ce9"
         },
         {
-            "m_Id": "b7aa7f23738f46108d1916d90cbd3844"
-        },
-        {
-            "m_Id": "8ef9115baec0448e9f74cc7092afd78a"
-        },
-        {
             "m_Id": "6291dd11e09b4edf8003cbd7e5d162d4"
         },
         {
@@ -1586,49 +1571,6 @@
     },
     "m_Labels": [],
     "m_Channel": 0
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "8ef9115baec0448e9f74cc7092afd78a",
-    "m_Guid": {
-        "m_GuidSerialized": "335d35bc-b040-4489-8f9f-74774059c609"
-    },
-    "m_Name": "BlendOpacityMult",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "BlendOpacityMult",
-    "m_DefaultReferenceName": "_BlendOpacityMult",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 3.390000104904175,
-    "m_FloatType": 1,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 10.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "930042176005494c80453c93ae34009c",
-    "m_Id": 0,
-    "m_DisplayName": "Lerp",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
@@ -1913,34 +1855,6 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "b7aa7f23738f46108d1916d90cbd3844",
-    "m_Guid": {
-        "m_GuidSerialized": "b6695456-5d0c-4cf8-9d14-f1a884301844"
-    },
-    "m_Name": "GlowAlpha",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "GlowAlpha",
-    "m_DefaultReferenceName": "_GlowAlpha",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 0.8899999856948853,
-    "m_FloatType": 1,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
     }
 }
 
@@ -2402,42 +2316,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "ee5ca056d1714fafb1d5bf02caa9f9ea",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": 285.0000305175781,
-            "y": 1011.5000610351563,
-            "width": 98.49993896484375,
-            "height": 33.99993896484375
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "930042176005494c80453c93ae34009c"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "6291dd11e09b4edf8003cbd7e5d162d4"
-    }
 }
 
 {

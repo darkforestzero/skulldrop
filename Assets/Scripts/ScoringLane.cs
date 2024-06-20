@@ -2,10 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BumpScoreOnCollision : MonoBehaviour
+public class ScoringLane : MonoBehaviour
 {
     public int scoreAmount = 1;
+    public GameObject glowPulse;
+
+    void AvtivateHighlights()
+    {
+        glowPulse.SetActive(true);
+    }
+    void DeActivateHighlights()
+    {
+        glowPulse.SetActive(false);
+    }
     // call scoremanager's delegate function to bump score by scoreAmount
+
+    // Bump score on collision with ball
     private void OnTriggerEnter2D(Collider2D other)
     {
         // if the object that collided with this object has the tag "ball"
