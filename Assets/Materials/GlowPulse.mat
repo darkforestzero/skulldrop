@@ -62,7 +62,7 @@ Material:
     - _Glow: 0.301
     - _GlowAlpha: 0.028
     - _Lerp: 1
-    - _PulseFrequencyMult: 0
+    - _PulseFrequencyMult: 8
     - _PulseSpeedScalar: 4
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -79,7 +79,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 2.8908849, g: 2.607491, b: 0.28636122, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _GlowColor: {r: 11.929523, g: 2.4606006, b: 20.865898, a: 0.34901962}
+    - _GlowColor: {r: 8.474187, g: 7.833185, b: 4.9166274, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4765900863006211006
