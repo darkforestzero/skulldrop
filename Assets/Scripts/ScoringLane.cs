@@ -7,11 +7,11 @@ public class ScoringLane : MonoBehaviour
     public int scoreAmount = 1;
     public GameObject glowPulse;
 
-    void AvtivateHighlights()
+    public void ActivateHighlight()
     {
         glowPulse.SetActive(true);
     }
-    void DeActivateHighlights()
+    public void DeActivateHighlight()
     {
         glowPulse.SetActive(false);
     }
