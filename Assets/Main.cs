@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -8,6 +9,7 @@ public class Main : MonoBehaviour
 {
     public float timeBetweenLaneChange = 2f;
     private float timer = 0f;
+    public TextMeshProUGUI timerText;
 
     public GameObject[] lanes;
 
@@ -44,11 +46,12 @@ public class Main : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= timeBetweenLaneChange)
+        timer -= Time.deltaTime;
+        if (timer <= 0)
         {
             ActivateRandomLane();
-            timer = 0f;
+            timer = timeBetweenLaneChange;
         }
+        timerText.SetText("Time: " + timer.ToString("F2"));
     }
 }
