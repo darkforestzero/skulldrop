@@ -7,26 +7,32 @@ public class ScoringLane : MonoBehaviour
     public int scoreAmount = 1;
     public GameObject glowPulse;
 
-    public void ActivateHighlight()
+    private bool isHighlighted = false;
+    public bool IsHighlighted()
     {
-        glowPulse.SetActive(true);
+        return isHighlighted;
     }
-    public void DeActivateHighlight()
+
+    public void SetHighlighted(bool val)
     {
-        glowPulse.SetActive(false);
+        isHighlighted = val;
+        glowPulse.SetActive(val);
     }
-    // call scoremanager's delegate function to bump score by scoreAmount
 
     // Bump score on collision with ball
     private void OnTriggerEnter2D(Collider2D other)
     {
         // if the object that collided with this object has the tag "ball"
-        if (other.gameObject.tag == "ball")
+        if (other.gameObject.tag == "ball" && isHighlighted)
         {
 
             Debug.Log("OnTriggerEnter2D(): scoreAmount" + scoreAmount);
             ScoreManager.OnBumpScore(scoreAmount);
 
+        }
+        if (!isHighlighted)
+        {
+            Debug.Log("OnTriggerEnter2D(): hit unhighlighted lane");
         }
     }
     // Start is called before the first frame update
