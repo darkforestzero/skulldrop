@@ -8,6 +8,9 @@ public class ScoringLane : MonoBehaviour
     public GameObject glowPulse;
 
     private bool isHighlighted = false;
+
+    public bool isDebugLogging { get; set; } = false;
+
     public bool IsHighlighted()
     {
         return isHighlighted;
@@ -25,16 +28,22 @@ public class ScoringLane : MonoBehaviour
         // if the object that collided with this object has the tag "ball"
         if (other.gameObject.tag == "ball" && isHighlighted)
         {
-
-            Debug.Log("OnTriggerEnter2D(): scoreAmount" + scoreAmount);
+            Log("OnTriggerEnter2D(): scoreAmount" + scoreAmount);
             ScoreManager.OnBumpScore(scoreAmount);
 
         }
-        if (!isHighlighted)
+        if (this.isDebugLogging && !isHighlighted)
         {
-            Debug.Log("OnTriggerEnter2D(): hit unhighlighted lane");
+            Log("OnTriggerEnter2D(): hit unhighlighted lane");
         }
     }
+
+    private void Log(string msg)
+    {
+        if (isDebugLogging)
+        { Debug.Log(msg); }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

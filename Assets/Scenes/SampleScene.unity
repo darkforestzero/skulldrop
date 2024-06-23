@@ -2225,6 +2225,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 614434443}
     m_Modifications:
+    - target: {fileID: 3428698215875654483, guid: 02430b195d0f44dffa1510e4656424c0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4561612996272907339, guid: 02430b195d0f44dffa1510e4656424c0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4596609118517703945, guid: 02430b195d0f44dffa1510e4656424c0, type: 3}
       propertyPath: m_Name
       value: lane4
@@ -3297,6 +3305,7 @@ MonoBehaviour:
   - {fileID: 168600560}
   - {fileID: 1301701064}
   - {fileID: 2147213440}
+  lastSelectedLaneIdx: -1
 --- !u!1 &1445188150
 GameObject:
   m_ObjectHideFlags: 0

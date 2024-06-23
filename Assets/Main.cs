@@ -13,11 +13,19 @@ public class Main : MonoBehaviour
 
     public GameObject[] lanes;
 
+
+    public int lastSelectedLaneIdx = -1;
+
     //every 2 seconds pick a random lane to call it's component "ScoringLane"'s function ActivateHighlight()
     // and call DeActivateHighlight() on all other lanes
-    void ActivateRandomLane()
+    private void ActivateNextLane()
     {
-        SetSelected(Random.Range(0, lanes.Length));
+        ++this.lastSelectedLaneIdx;
+        if (this.lastSelectedLaneIdx >= lanes.Length)
+        {
+            this.lastSelectedLaneIdx = 0;
+        }
+        SetSelected(this.lastSelectedLaneIdx);
     }
 
     private void SetSelected(int index)
@@ -29,6 +37,7 @@ public class Main : MonoBehaviour
             ScoringLane lane = lanes[i].GetComponent<ScoringLane>();
             Assert.IsNotNull(lane);
             bool isCurrentlyHighlighted = lane.IsHighlighted();
+            // Debug.Log("SetSelected(): i=" + i + " isCurrentSelection=" + isCurrentSelection + " isCurrentlyHighlighted=" + isCurrentlyHighlighted);
             if (isCurrentlyHighlighted && isCurrentSelection)
             {
                 continue;
@@ -49,7 +58,7 @@ public class Main : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            ActivateRandomLane();
+            ActivateNextLane();
             timer = timeBetweenLaneChange;
         }
         timerText.SetText("Time: " + timer.ToString("F2"));
