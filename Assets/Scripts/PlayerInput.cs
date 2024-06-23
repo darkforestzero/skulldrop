@@ -19,6 +19,19 @@ public class PlayerInput : MonoBehaviour
         SpawnBall(new Vector3(mousePosition.x, mousePosition.y, 1));
     }
 
+    private float kTimeBetweenSpawns = .1f;
+    private float timer = 0f;
+
+    private void OnMouseDrag()
+    {
+        timer += Time.deltaTime;
+        if (timer >= kTimeBetweenSpawns)
+        {
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            SpawnBall(new Vector3(mousePosition.x, mousePosition.y, 1));
+            timer = 0f;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
