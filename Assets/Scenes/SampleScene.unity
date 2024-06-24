@@ -552,6 +552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: peg (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4863927793912502104, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8678121865204749170, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.34280175
@@ -1892,6 +1896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: peg (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4863927793912502104, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8678121865204749170, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.07719827
@@ -1948,6 +1956,10 @@ PrefabInstance:
     - target: {fileID: 4863927793912502104, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
       propertyPath: m_Name
       value: peg (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4863927793912502104, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678121865204749170, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2166,6 +2178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 973187904}
+  - component: {fileID: 973187905}
   m_Layer: 0
   m_Name: pegs
   m_TagString: Untagged
@@ -2217,6 +2230,19 @@ Transform:
   - {fileID: 1719534609}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &973187905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973187903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ff4cdc6e6fa481397e222e58bf480b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
 --- !u!1001 &995722573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4769,6 +4795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: peg (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4863927793912502104, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8678121865204749170, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.76
@@ -4903,6 +4933,10 @@ PrefabInstance:
     - target: {fileID: 4863927793912502104, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
       propertyPath: m_Name
       value: peg (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4863927793912502104, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5149051757649547029, guid: 85d00448e5d064eeab57ef373a3cb276, type: 3}
       propertyPath: tilemap
