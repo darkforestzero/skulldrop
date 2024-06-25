@@ -2,27 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public class PegController : MonoBehaviour
 {
     public int level = 0;
+    public peglook[] pegs;
 
     // array of int[]s to define each of the first 5 levels
     public int[][] levels = new int[][]
     {
-    new int[] {5, 10, 15},
-    new int[] {1, 5, 7, 10, 12, 15},
+    new int[] {12, 13, 14, 15, 16, 17, 24, 25, 26, 27, 28, 29},
+    new int[] {1, 5, 7, 10, 12, 13, 14, 15, 16, 17, 24, 25, 26, 27, 28, 29},
     new int[] {1, 3, 5, 7, 9, 11, 13, 15},
     new int[] {1, 3, 5, 7, 9, 11, 13, 15, 2, 4, 6, 8, 10, 12, 14},
     new int[] {1, 3, 5, 7, 9, 11, 13, 15, 2, 4, 6, 8, 10, 12, 14, 0, 16}
     };
 
-    private peglook[] pegs;
     // Start is called before the first frame update
     void Start()
     {
-        // store a reference to array of child objects of prefab "Peg"
-        pegs = GetComponentsInChildren<peglook>();
+        Debug.Assert(pegs != null && pegs.Length > 0, "Pegs array is not set or empty");
 
         Debug.Log("Pegs: " + pegs.Length);
         SetPegsForLevel(levels[level]);
