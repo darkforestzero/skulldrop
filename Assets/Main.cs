@@ -13,6 +13,8 @@ public class Main : MonoBehaviour
 
     public GameObject[] lanes;
 
+    [SerializeField]
+    private ProgressBar progressBar;
 
     public int lastSelectedLaneIdx = -1;
 
@@ -61,6 +63,7 @@ public class Main : MonoBehaviour
             ActivateNextLane();
             timer = timeBetweenLaneChange;
         }
+        progressBar.SetProgress(timer / timeBetweenLaneChange);
         timerText.SetText("Time: " + timer.ToString("F2"));
     }
 }
